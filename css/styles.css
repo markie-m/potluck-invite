@@ -16,7 +16,9 @@ body {
   color: rgb(46, 42, 42);
   font-size: 16px;
   text-align: center;
-  background-image: #fff;
+  background-image: url("../img/potluck-portrait.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Open Sans", sans-serif;
   margin-top: 3rem;
 }
@@ -33,6 +35,7 @@ a {
 .container {
   width: 90%;
   max-width: 1000px;
+  background: #fff;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -146,7 +149,12 @@ footer {
   width: 100%;
   padding: 2em 0;
 }
+
+/* RESPONSIVE STYLES */
 @media screen and (min-width: 800px) {
+  body {
+    background-image: url("../img/potluck-landscape.jpg");
+  }
   .container {
     justify-content: space-between;
   }
